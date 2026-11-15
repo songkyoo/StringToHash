@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/StringToHash.Generator/StringToHash.Generator.csproj" />
+    <Project Path="src/StringToHash/StringToHash.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/StringToHash.Tests/StringToHash.Tests.csproj" />
+  </Folder>
+</Solution>

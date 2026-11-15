@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>StringToHash</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace />
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Gyu Song</Authors>
+    <PackageId>StringToHash</PackageId>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/songkyoo/StringToHash</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StringToHash.Generator\StringToHash.Generator.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\StringToHash.Generator\bin\$(Configuration)\netstandard2.0\StringToHash.Generator.dll" Pack="true" PackagePath="analyzers/dotnet/cs" />
+  </ItemGroup>
+
+</Project>
